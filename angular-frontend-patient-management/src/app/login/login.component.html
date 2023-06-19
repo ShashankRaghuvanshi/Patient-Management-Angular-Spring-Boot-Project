@@ -1,0 +1,52 @@
+<!-- Section: Design Block -->
+<section class=" text-center text-lg-start">
+    <style>
+      .rounded-t-5 {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+  
+      @media (min-width: 992px) {
+        .rounded-tr-lg-0 {
+          border-top-right-radius: 0;
+        }
+  
+        .rounded-bl-lg-5 {
+          border-bottom-left-radius: 0.5rem;
+        }
+      }
+    </style>
+    <div class="card mb-3" style="background-color: aliceblue;">
+      <div class="row g-0 d-flex align-items-center">
+        <div class="col-lg-4 d-none d-lg-flex">
+          <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Login Page for Patient Management"
+            class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+        </div>
+        <div class="col-lg-8">
+          <div class="card-body py-5 px-md-5">
+  
+            <form (ngSubmit)="authenticate()">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" [(ngModel)]="email" id="form2Example1" name="email" class="form-control" placeholder="enter email address"/>
+                <label class="form-label" for="form2Example1" ><b style="color:rgb(2, 32, 87)"> Email </b> </label>
+              </div>
+  
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" [(ngModel)]="pass" id="form2Example2" name="pass" class="form-control" placeholder="enter password"/>
+                <label class="form-label" for="form2Example2"><b style="color:rgb(2, 32, 87)"> Password </b></label>
+              </div>
+  
+  
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4" style="background-color: rgb(54, 58, 109); ">Login</button>
+  
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->

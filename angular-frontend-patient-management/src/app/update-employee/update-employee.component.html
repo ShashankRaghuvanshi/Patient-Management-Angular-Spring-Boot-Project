@@ -1,0 +1,44 @@
+<div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-xl-8 text-center">
+      <h2 class="mb-4" style="color: rgb(14, 28, 60);">UPDATE PATIENT</h2>
+      
+    </div>
+  </div>
+<section class="vh-95">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form (ngSubmit)="onSubmit()">
+    
+                <div class="form-group">
+                    <label><b style="color:rgb(2, 32, 87)"> First Name</b></label>
+                    <input type="text" class ="form-control" id = "firstName"
+                        [(ngModel)] = "employee.firstName" name = "firstName" placeholder="enter first name">
+                </div>
+            
+                <div class="form-group">
+                    <label><b style="color:rgb(2, 32, 87)"> Last Name </b></label>
+                    <input type="text" class ="form-control" id = "lastName"
+                        [(ngModel)] = "employee.lastName" name = "lastName" placeholder="enter last name">
+                </div>
+            
+                <div class="form-group">
+                    <label><b style="color:rgb(2, 32, 87)"> Email Id </b></label>
+                    <input type="text" class ="form-control" id = "emailId"
+                        [(ngModel)] = "employee.emailId" name = "emailId" placeholder="enter email address">
+                </div>
+            
+                <button class = "btn btn-success" type ="submit" style="margin-bottom: 20px; background-color: rgb(54, 58, 109);">Submit</button>
+            
+            </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+   
